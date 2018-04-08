@@ -1,0 +1,6 @@
+#ignore compiled class file
+*.class
+
+#ignore log files
+*.log
+

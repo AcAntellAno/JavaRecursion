@@ -1,0 +1,8 @@
+package euclideanaglorithm.com.acantellano;
+
+public class Algorithm {
+	public int gcdRecursive(int num1, int num2){
+		return num1;
+	}
+
+}
