@@ -1,0 +1,48 @@
+package recursion.acantellano;
+
+public class Algorithm {
+	public int sumIterative(int n){
+		int result = 0;
+		for(int i = 0; i <= n; ++i){
+			result = result + i;
+		}
+		return result;
+	}
+	
+	public int sumRecursive(int n){
+		if( n == 1) return 1;
+		return n + sumRecursive(n - 1);
+	}
+	
+	public void buildLayerHead (int height){ //head recursion
+		if(height == 0) return;
+		//uses stack memory
+		buildLayerHead(height - 1);
+		System.out.println(height);
+	}
+	
+	public void buildLayerTail (int height){ //tail recursion
+		if(height == 0) return;
+		
+		System.out.println(height);
+		buildLayerTail(height - 1);
+	}
+	
+	public int factorial(int n){
+		//4! = 4*3*2*1
+		//n! = n*(n-1) * (n-2) * ...
+		if(n == 1) return 1;
+		
+		return n * factorial(n - 1);
+		
+		//uses stack because we don't know what is factorial(3) or factorial(2) etc
+		
+	}
+	
+	public int factorialBetter(int accumulator, int n){
+		if(n == 1) return accumulator;
+		
+		return factorialBetter(accumulator * n, n - 1);
+		
+	}
+}

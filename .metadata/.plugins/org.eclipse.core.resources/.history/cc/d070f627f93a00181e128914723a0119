@@ -1,0 +1,19 @@
+package recursion.acantellano;
+
+public class App {
+
+	public static void main(String[] args) {
+		Algorithm algorithm = new Algorithm();
+		System.out.println(algorithm.sumIterative(5));
+		
+		Algorithm recAlg = new Algorithm();
+		System.out.println(recAlg.sumRecursive(5));
+		
+
+		Algorithm buildingAlg = new Algorithm();
+		buildingAlg.buildLayer(4);
+		
+		
+	}
+
+}
