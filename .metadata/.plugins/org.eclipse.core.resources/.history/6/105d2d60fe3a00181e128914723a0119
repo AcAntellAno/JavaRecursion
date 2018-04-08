@@ -39,14 +39,7 @@ public class Algorithm {
 		
 	}
 	
-	//better approach because we only store a reference to an accumulator
-	//so, since we did that we do not have to return variables on that stack
-	//because we are going to return accumulator instead of 1 and adding 
-	//recursive calls to stack. This is a faster and more efficient solution
-	//to the factorial problem. Same for fibonacci numbers, you wouldn't store
-	//1000 fibonacci recursive calls on stack, instead you go to the accumulator
-	//and return the solution
-	public int factorialBetter(int accumulator, int n){ 
+	public int factorialBetter(int accumulator, int n){
 		if(n == 1) return accumulator;
 		
 		return factorialBetter(accumulator * n, n - 1);
