@@ -1,5 +1,4 @@
 INDEX VERSION 1.129+C:\Users\Pompe Sito\Desktop\Java\.metadata\.plugins\org.eclipse.jdt.core
 2414175126.index
-1376028778.index
 1988463036.index
 796674472.index
